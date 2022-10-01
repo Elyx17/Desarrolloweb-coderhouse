@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./estilo.css" />
+        <title>Elyx Hall</title>
+        <script
+        src="https://kit.fontawesome.com/825fd4e29d.js"
+        crossorigin="anonymous"
+        ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    </head>
+<body class="reservas">
+<header class="Main__Header">
+        <nav>
+            <div>
+                <a href="index.html">
+                  <img class= "Main__Cont__Logo" src="icon/icon.png" alt= "Elyx Hall"/>
+                </a>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar__btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        <ul class="Main__Header__Nav">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a href="menu.html"><i class="fa-solid fa-clipboard-list"></i> Menu</a</li>
+            <li><a href="nosotros.html"><i class="fa-solid fa-people-group"></i> Nosotros</a></li>
+            <li><a href="reservas.html"><i class="fa-solid fa-calendar-check"></i> Reservas</a></li>
+            <li><a href="contacto.html"><i class="fas">&#xf2bd;</i> Contacto</a></li>
+        </ul>
+        </nav>
+    <!-- Fin barra de navegacion -->
+</header>
+        <section class="Form">
+            <article>
+            <H2>Hace Tu reserva</H2>
+            </article>
+            <article>
+                <p>En esta plataforma vas a poder consultar en tiempo real las fechas y horarios disponibles</p>
+            </article>
+        </section>
+            <form class="Form__Content">
+                <legend>Datos</legend>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Email">
+                <input type="number" placeholder="Teléfono">
+                <input type="date" placeholder="Fecha">
+                <input type="time" placeholder="Hora">
+                <textarea name="comentario" placeholder="Comentario" cols="30" rows="5"></textarea>
+                <input type="checkbox">
+                <input type="submit">
+            </form>
+            <div>
+                <h3>Cómo podés llegar!</h3>
+                <p>Por aca te dejamos nuestra ubicacion</p>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d724.7486411588001!2d-58.40217570696316!3d-34.76588323078033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1662922751836!5m2!1ses!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <footer>
+                <div class="footer">
+                    <div class="footer__box">
+                        <h3 class="footer__title2">Nuestras redes Sociales</h3>
+                        <div class="footer__redes">
+                            <a href="https://www.instagram.com/" target="_blank">Instagram<i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank">Facebook<i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank">Youtube<i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank">Linkedin<i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://twitter.com/" target="_blank">Twitter<i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://www.whatsapp.com/" target="_blank">Whatsapp<i class="fa-brands fa-square-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer__box">
+                        <h3 class="footer__title1">Sobre nosotros</h3>
+                        <p class="footer__p">Somos una empresa dedicada al estudio y concervación de la cocteleria.</p>
+                    </div>
+                    <div class="footer__box">
+                        <h3>Ubicación</h3>
+                        <a href="#">Calle Falsa 123</a>
+                        <a href="#">Palermo Holywood</a>
+                        <a href="#">Ciudad Autónoma de Bs. As.</a>
+                    </div>
+                </div>
+                <div class="footer__copy">
+                    <small>&copy; 2022 <b>Elyx Hall</b> - Todos los derechos reservados</small>
+                </div>
+            </footer>
+</body>
+</html>
