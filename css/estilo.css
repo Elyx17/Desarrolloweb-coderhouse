@@ -212,10 +212,10 @@ body {
     font-size: 1.4rem; }
 
 #nos-img-1 {
-  background-image: url(../img/barra.png); }
+  background-image: url("../img/barra.png"); }
 
 #nos-img-2 {
-  background-image: url(../img/bar.jpg);
+  background-image: url("../img/bar.jpg");
   background-position: bottom; }
 
 .sponsor {
@@ -389,7 +389,7 @@ body {
   background: rgba(0, 0, 0, 0.7); }
 
 #reservas__card__img {
-  background: url(../img/bar.jpg);
+  background: url("../img/bar.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom; }
