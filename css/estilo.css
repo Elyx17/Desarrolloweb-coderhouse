@@ -86,7 +86,7 @@ body {
   text-align: left;
   background-attachment: fixed;
   background-size: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url(../img/zoom-icecube.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url("../img/icecube.jpg");
   background-repeat: no-repeat; }
 
 .carrusel {
