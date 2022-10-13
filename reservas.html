@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./estilo.css" />
+        <link rel="stylesheet" href="./css/estilo.css" />
         <title>Elyx Hall</title>
         <script
         src="https://kit.fontawesome.com/825fd4e29d.js"
@@ -36,59 +36,63 @@
         </nav>
     <!-- Fin barra de navegacion -->
 </header>
-        <section class="Form">
-            <article>
-            <H2>Hace Tu reserva</H2>
-            </article>
-            <article>
-                <p>En esta plataforma vas a poder consultar en tiempo real las fechas y horarios disponibles</p>
-            </article>
-        </section>
-            <form class="Form__Content">
-                <legend>Datos</legend>
-                <input type="text" placeholder="Nombre">
-                <input type="email" placeholder="Email">
-                <input type="number" placeholder="Teléfono">
-                <input type="date" placeholder="Fecha">
-                <input type="time" placeholder="Hora">
-                <textarea name="comentario" placeholder="Comentario" cols="30" rows="5"></textarea>
-                <input type="checkbox">
-                <input type="submit">
-            </form>
-            <div>
-                <h3>Cómo podés llegar!</h3>
-                <p>Por aca te dejamos nuestra ubicacion</p>
-            </div>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d724.7486411588001!2d-58.40217570696316!3d-34.76588323078033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1662922751836!5m2!1ses!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <footer>
-                <div class="footer">
-                    <div class="footer__box">
-                        <h3 class="footer__title2">Nuestras redes Sociales</h3>
-                        <div class="footer__redes">
-                            <a href="https://www.instagram.com/" target="_blank">Instagram<i class="fa-brands fa-square-instagram"></i></a>
-                            <a href="https://www.facebook.com/" target="_blank">Facebook<i class="fa-brands fa-square-facebook"></i></a>
-                            <a href="https://www.youtube.com/" target="_blank">Youtube<i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://www.linkedin.com/" target="_blank">Linkedin<i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://twitter.com/" target="_blank">Twitter<i class="fa-brands fa-square-twitter"></i></a>
-                            <a href="https://www.whatsapp.com/" target="_blank">Whatsapp<i class="fa-brands fa-square-whatsapp"></i></a>
-                        </div>
-                    </div>
-                    <div class="footer__box">
-                        <h3 class="footer__title1">Sobre nosotros</h3>
-                        <p class="footer__p">Somos una empresa dedicada al estudio y concervación de la cocteleria.</p>
-                    </div>
-                    <div class="footer__box">
-                        <h3>Ubicación</h3>
-                        <a href="#">Calle Falsa 123</a>
-                        <a href="#">Palermo Holywood</a>
-                        <a href="#">Ciudad Autónoma de Bs. As.</a>
-                    </div>
+<div class="reservas__main">
+    <div class="reservas__card" id="reservas__card__img"></div>
+    <div class="reservas__card" id="reservas__form">
+        <h3>Reserva</h3>
+        <label>Fecha
+            <input type="date" placeholder="Fecha" required>
+        </label>
+        <label>Hora
+            <input type="time" placeholder="Hora" required>
+        </label>
+        <label>Nombre y apellido
+            <input type="text" placeholder="Nombre y apellido" required>
+        </label>
+        <label>Correo electrónico
+            <input type="email" placeholder="Correo electrónico" required>
+        </label>
+        <label>Número de teléfono
+            <input type="number" placeholder="Número de teléfono" required>
+        </label>
+        <label>Cantidad de personas
+            <input type="number" placeholder="Cantidad de perdonas" required>
+        </label>
+        <textarea name="Comentario" id="Comentario" cols="30" rows="10" placeholder="Dejanos tu comentario"></textarea>
+        <button type="submit">Reservar mesa</button>
+    </div>
+</div>
+    <div class="map">
+        <h3>Podes encontrarnos facíl y rápido</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d724.7486411588001!2d-58.40217570696316!3d-34.76588323078033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1662922751836!5m2!1ses!2sar" width="100%" height="370" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+<footer>
+        <div class="footer">
+            <div class="footer__box">
+                    <h3 class="footer__title2">Nuestras redes Sociales</h3>
+                <div class="footer__redes">
+                    <a href="https://www.instagram.com/" target="_blank">Instagram<i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank">Facebook<i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank">Youtube<i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank">Linkedin<i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/" target="_blank">Twitter<i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.whatsapp.com/" target="_blank">Whatsapp<i class="fa-brands fa-square-whatsapp"></i></a>
                 </div>
-                <div class="footer__copy">
-                    <small>&copy; 2022 <b>Elyx Hall</b> - Todos los derechos reservados</small>
-                </div>
-            </footer>
+            </div>
+            <div class="footer__box">
+                <h3 class="footer__title1">Sobre nosotros</h3>
+                <p class="footer__p">Somos una empresa dedicada al estudio y concervación de la cocteleria.</p>
+            </div>
+            <div class="footer__box">
+                <h3>Ubicación</h3>
+                <a href="#">Calle Falsa 123</a>
+                <a href="#">Palermo Holywood</a>
+                <a href="#">Ciudad Autónoma de Bs. As.</a>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <small>&copy; 2022 <b>Elyx Hall</b> - Todos los derechos reservados</small>
+        </div>
+    </footer>
 </body>
 </html>

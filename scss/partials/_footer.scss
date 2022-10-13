@@ -1,0 +1,33 @@
+footer {
+	width: 100%;
+	height: auto;
+	text-decoration: none;
+	background-color: #180000;
+	color: #8C5C20;
+}
+.footer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	margin: 10px 30px 5px;
+	font-size: 1rem;
+}
+.footer__box {
+	a {
+		color: #8C5C20;
+		text-transform: capitalize;
+		text-decoration: none;
+	}
+}
+.footer__redes {
+	a {
+		color: #8C5C20;
+		text-transform: capitalize;
+		text-decoration: none;
+	}
+}
+.footer__copy {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0 15px 0;
+}

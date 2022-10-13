@@ -1,0 +1,15 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+}
+
+@media only screen and (max-width: 720px){
+    *{
+        font-size: 14px;
+    }
+}

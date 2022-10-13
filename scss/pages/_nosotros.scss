@@ -1,0 +1,75 @@
+.nosotros {
+	color: rgb(240, 232, 232);
+}
+
+.nosotros__box{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 8em;
+}
+.nosotros__card{
+		width: 500px;
+		height: 500px;
+		border: 10px solid #0f0f0f;
+		border-radius: 125px 41px 125px 30px;
+}
+
+.nosotros__card__textos{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: space-evenly;
+
+	h3{
+		font-size: 2rem;
+	}
+	p{
+		font-size: 1.4rem;
+	}
+}
+
+#nos-img-1 {
+	background-image: url(../../img/barra.png);
+}
+
+#nos-img-2 {
+	background-image: url(../../img/bar.jpg);
+	background-position: bottom;
+}
+
+.sponsor {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	height: auto;
+	background-color: #292929;
+}
+.sponsor__card {
+	img {
+		height: 12em;
+	}
+}
+#jager {
+	height: 8em;
+}
+
+.box__sponsor{
+	text-align: center;
+	
+	h3{
+		font-size: 2.5rem;
+		margin-top: 3rem;
+	}
+}
+
+
