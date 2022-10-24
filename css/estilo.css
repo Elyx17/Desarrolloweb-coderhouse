@@ -512,9 +512,13 @@ body {
     gap: 0px 0px;
     grid-template-areas: "title title" "subtitle subtitle" "ic1 ic2" "ic3 ic4" "ic5 ic6" "ic7 none" "ic8 ic8" "submit submit"; }
   .title {
-    grid-area: title; }
+    grid-area: title;
+    text-align: center;
+    font-size: 40px; }
   .subtitle {
-    grid-area: subtitle; }
+    grid-area: subtitle;
+    text-align: center;
+    font-size: 30px; }
   .ic1 {
     grid-area: ic1; }
   .ic2 {
@@ -550,7 +554,8 @@ body {
     width: 100%;
     background: #180000;
     position: fixed;
-    z-index: 2;
+    z-index: 2; }
+  .Main__Header-R {
     margin-top: -128px; }
   nav {
     height: 60px;
@@ -631,7 +636,7 @@ body {
 @media only screen and (max-width: 720px) {
   * {
     font-size: 14px; }
-  .Main__Header {
+  .Main__Header-R {
     margin-top: -112px; } }
 
 @media only screen and (max-width: 560px) {
@@ -640,7 +645,8 @@ body {
   .footer {
     gap: 13px; }
   .Main__Header {
-    width: 100%;
+    width: 100%; }
+  .Main__Header-R {
     margin-top: -112px; }
   .menu__banner {
     width: 100%;
