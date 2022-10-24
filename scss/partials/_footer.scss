@@ -1,9 +1,11 @@
+@import "./partials/variables";
+
 footer {
 	width: 100%;
 	height: auto;
 	text-decoration: none;
 	background-color: #180000;
-	color: #8C5C20;
+	color: $maincolor;
 }
 .footer {
 	display: grid;
@@ -14,14 +16,14 @@ footer {
 }
 .footer__box {
 	a {
-		color: #8C5C20;
+		color: $maincolor;
 		text-transform: capitalize;
 		text-decoration: none;
 	}
 }
 .footer__redes {
 	a {
-		color: #8C5C20;
+		color: $maincolor;
 		text-transform: capitalize;
 		text-decoration: none;
 	}
