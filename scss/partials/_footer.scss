@@ -8,17 +8,21 @@ footer {
 	color: $maincolor;
 }
 .footer {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
-	margin: 10px 30px 5px;
+	display: flex;
+    flex-wrap: nowrap;
+	margin: 0px 30px 5px;
 	font-size: 1rem;
 }
 .footer__box {
+	margin: 20px 20px;
+	padding: 20px 20px;
 	a {
 		color: $maincolor;
 		text-transform: capitalize;
 		text-decoration: none;
+	}
+	h3{
+		margin-bottom: 10px;
 	}
 }
 .footer__redes {
@@ -26,6 +30,7 @@ footer {
 		color: $maincolor;
 		text-transform: capitalize;
 		text-decoration: none;
+		padding: 0 5px;
 	}
 }
 .footer__copy {

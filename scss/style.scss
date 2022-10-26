@@ -121,6 +121,16 @@
 	}
 }
 @media only screen and (max-width: 768px) {
+	.footer{
+		flex-wrap: wrap;
+	}
+	.footer__box{
+		text-align: center;
+	}
+	.footer__copy{
+		text-align: center;
+	}
+
 	.Main__Header {
 		width: 100%;
 		background: #180000;
