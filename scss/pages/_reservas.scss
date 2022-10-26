@@ -9,12 +9,12 @@
 }
 
 .form {
-	background-color: #180000;
+	background-color: rgba(17,00,00,.9);
 	border-radius: 20px;
 	box-sizing: border-box;
 	height: 880px;
 	padding: 20px;
-	width: 320px;
+	width: 375px;
 	margin: 8rem auto 5rem;
 	border: 1px solid #d59444;
 }
@@ -25,6 +25,7 @@
 	font-size: 36px;
 	font-weight: 600;
 	margin-top: 10px;
+	text-align: center;
   }
   
   .subtitle {
@@ -33,6 +34,7 @@
 	font-size: 16px;
 	font-weight: 600;
 	margin-top: 10px;
+	text-align: center;
   }
   
   .input-container {
@@ -60,7 +62,7 @@
   }
   
   .cut {
-	background-color: #180000;
+	background-color: rgba(17,00,00,.98);
 	border-radius: 10px;
 	height: 20px;
 	left: 20px;
@@ -103,13 +105,11 @@
   
   .input:not(:placeholder-shown) ~ .placeholder {
 	color: #fff;
-  }
-  
-  .input:focus ~ .placeholder {
+}
+.input:focus ~ .placeholder {
 	color: #d59444;
-  }
-  
-  .submit {
+}
+.submit {
 	background-color: #d59444;
 	border-radius: 12px;
 	border: 0;
@@ -133,7 +133,59 @@
 	textarea{
 	border-radius: 10px;
 	resize:none;
-	width: 280px;
+	width: 332px;
     height: 90px
 	}
 }
+
+@font-face {
+	font-family: 'Audiowide';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Audiowide'), local('Audiowide-Regular'), url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+  }
+
+.ubi{
+	h1{
+		margin:20px 0 20px 0;
+		text-align: center;
+	  }
+	  a{
+		text-decoration:none;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		transition: all 0.5s;
+		font-size:3rem;
+		color:#d59444;
+		font-family:Audiowide;  
+		}
+		a:hover{
+			-webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+			-moz-animation: neon3 1.5s ease-in-out infinite alternate;
+			animation: neon3 1.5s ease-in-out infinite alternate;
+		  }
+}
+
+@-webkit-keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #d59444,
+               0 0 70px  #d59444,
+               0 0 80px  #d59444,
+               0 0 100px #d59444,
+               0 0 150px #d59444;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #d59444,
+               0 0 35px #d59444,
+               0 0 40px #d59444,
+               0 0 50px #d59444,
+               0 0 75px #d59444;
+  }
+}
+

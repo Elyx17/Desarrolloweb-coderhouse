@@ -48,35 +48,57 @@ body {
 .Main__Header__Nav li a i {
   font-size: 1.6rem; }
 
-.banner {
-  font-family: "Courier New", Courier, monospace;
-  color: white; }
-  .banner h1 {
-    display: inline-block;
-    font-weight: 600px;
-    font-size: 3rem;
-    color: #fff;
-    margin-left: 50px;
-    text-shadow: 1px 1px #180000, -1px -1px #180000, 2px 2px #180000, -2px -2px #180000; }
-  .banner h2 {
-    display: inline-block;
-    opacity: 1;
-    margin: 2em 0;
-    color: #fff;
-    font-size: 2rem;
-    font-style: italic;
-    margin-left: 50px;
-    text-shadow: 1px 1px #180000, 3px 3px #180000, 2px 2px #180000; }
-  .banner a {
-    display: inline-block;
-    padding: 0.6em 3.5em;
-    margin: auto;
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Pacifico Regular"), local("Pacifico-Regular"), url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff) format("woff"); }
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px  #fff, 0 0 30px  #fff, 0 0 40px  #d59444, 0 0 70px  #d59444, 0 0 80px  #d59444, 0 0 100px #d59444, 0 0 150px #d59444; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #d59444, 0 0 35px #d59444, 0 0 40px #d59444, 0 0 50px #d59444; } }
+
+.banner h1 {
+  display: inline-block;
+  text-align: center;
+  font-size: 7em; }
+  .banner h1 a {
     text-decoration: none;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 40px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #d59444;
+    font-family: Pacifico;
     margin-left: 50px;
-    text-shadow: 1px 1px #180000, -1px -1px #180000, 2px 2px #180000, -2px -2px #180000; }
+    font-size: 8rem; }
+  .banner h1 a:hover {
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate; }
+
+.banner h2 {
+  font-family: Pacifico;
+  display: inline-block;
+  opacity: 1;
+  margin: 1em 0;
+  color: #fff;
+  font-size: 2.5rem;
+  font-style: italic;
+  margin-left: 50px;
+  text-shadow: 1px 1px #180000, 3px 3px #180000, 2px 2px #180000; }
+
+.bannerabutton {
+  display: inline-block;
+  padding: 0.6em 3.5em;
+  margin: auto;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  margin-left: 50px;
+  text-shadow: 1px 1px #180000, -1px -1px #180000, 2px 2px #180000, -2px -2px #180000; }
 
 .banner__ban {
   width: 100%;
@@ -85,8 +107,8 @@ body {
   align-items: center;
   text-align: left;
   background-attachment: fixed;
-  background-size: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url(../img/icecube.jpg);
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)), url(../img/icecube.jpg);
   background-repeat: no-repeat; }
 
 .carrusel {
@@ -328,7 +350,8 @@ body {
   .menu__banner button {
     background: #FFD600;
     display: block;
-    width: 100%;
+    width: 50%;
+    margin-left: 25%;
     font-weight: bold;
     font-size: 1rem;
     text-align: center;
@@ -356,12 +379,12 @@ body {
   height: auto; }
 
 .form {
-  background-color: #180000;
+  background-color: rgba(17, 0, 0, 0.9);
   border-radius: 20px;
   box-sizing: border-box;
   height: 880px;
   padding: 20px;
-  width: 320px;
+  width: 375px;
   margin: 8rem auto 5rem;
   border: 1px solid #d59444; }
 
@@ -370,14 +393,16 @@ body {
   font-family: sans-serif;
   font-size: 36px;
   font-weight: 600;
-  margin-top: 10px; }
+  margin-top: 10px;
+  text-align: center; }
 
 .subtitle {
   color: #eee;
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 600;
-  margin-top: 10px; }
+  margin-top: 10px;
+  text-align: center; }
 
 .input-container {
   height: 50px;
@@ -401,7 +426,7 @@ body {
   width: 100%; }
 
 .cut {
-  background-color: #180000;
+  background-color: rgba(17, 0, 0, 0.98);
   border-radius: 10px;
   height: 20px;
   left: 20px;
@@ -463,8 +488,71 @@ body {
 .ic8 textarea {
   border-radius: 10px;
   resize: none;
-  width: 280px;
+  width: 332px;
   height: 90px; }
+
+@font-face {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Audiowide"), local("Audiowide-Regular"), url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff) format("woff"); }
+
+.ubi h1 {
+  margin: 20px 0 20px 0;
+  text-align: center; }
+
+.ubi a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 3rem;
+  color: #d59444;
+  font-family: Audiowide; }
+
+.ubi a:hover {
+  -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+  animation: neon3 1.5s ease-in-out infinite alternate; }
+
+@-webkit-keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px  #fff, 0 0 30px  #fff, 0 0 40px  #d59444, 0 0 70px  #d59444, 0 0 80px  #d59444, 0 0 100px #d59444, 0 0 150px #d59444; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #d59444, 0 0 35px #d59444, 0 0 40px #d59444, 0 0 50px #d59444, 0 0 75px #d59444; } }
+
+@font-face {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Audiowide"), local("Audiowide-Regular"), url(http://themes.googleusercontent.com/static/fonts/audiowide/v2/8XtYtNKEyyZh481XVWfVOj8E0i7KZn-EPnyo3HZu7kw.woff) format("woff"); }
+
+.contactodebus h1 {
+  margin: 20px 0 20px 0;
+  color: #d59444; }
+
+.contactodebus a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 3rem;
+  color: #d59444;
+  font-family: Audiowide; }
+
+.contactodebus a:hover {
+  -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+  animation: neon3 1.5s ease-in-out infinite alternate; }
+
+@-webkit-keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px  #fff, 0 0 30px  #fff, 0 0 40px  #d59444, 0 0 70px  #d59444, 0 0 80px  #d59444, 0 0 100px #d59444, 0 0 150px #d59444; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #d59444, 0 0 35px #d59444, 0 0 40px #d59444, 0 0 50px #d59444, 0 0 75px #d59444; } }
+
+.contactoformu {
+  margin: auto; }
 
 @media only screen and (min-width: 769px) {
   .Main__Header {
@@ -555,7 +643,7 @@ body {
     background: #180000;
     position: fixed;
     z-index: 2; }
-  .Main__Header-R {
+  .reservasHeaderNav {
     margin-top: -128px; }
   nav {
     height: 60px;
@@ -579,7 +667,7 @@ body {
     width: 100%;
     height: 0vh;
     top: 60px;
-    background: black;
+    background: rgba(0, 0, 0, 0.98);
     color: #d59344;
     text-align: center;
     transition: all 0.5s; }
@@ -602,14 +690,16 @@ body {
         display: block; }
   .banner__ban {
     background-size: cover; }
-  .banner h1 {
-    font-size: 2rem; }
+  .banner__descrip {
+    margin-top: -15rem; }
   .banner h2 {
     font-size: 1.5rem;
     margin: 10px 20px 15px;
     text-align: justify; }
   .banner a {
     font-size: 1rem; }
+  .banner h1 a {
+    font-size: 7rem; }
   .menu {
     width: 100%;
     margin: auto;
@@ -636,7 +726,7 @@ body {
 @media only screen and (max-width: 720px) {
   * {
     font-size: 14px; }
-  .Main__Header-R {
+  .reservasHeaderNav {
     margin-top: -112px; } }
 
 @media only screen and (max-width: 560px) {
@@ -646,7 +736,7 @@ body {
     gap: 13px; }
   .Main__Header {
     width: 100%; }
-  .Main__Header-R {
+  .reservasHeaderNav {
     margin-top: -112px; }
   .menu__banner {
     width: 100%;
@@ -667,4 +757,7 @@ body {
   .card {
     width: 100%;
     margin: 15px 0px;
-    max-height: auto; } }
+    max-height: auto; }
+  .banner h1 a {
+    font-size: 5.5rem;
+    margin-left: 20px; } }

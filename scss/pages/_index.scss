@@ -1,37 +1,74 @@
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(http://themes.googleusercontent.com/static/fonts/pacifico/v5/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #d59444,
+               0 0 70px  #d59444,
+               0 0 80px  #d59444,
+               0 0 100px #d59444,
+               0 0 150px #d59444;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #d59444,
+               0 0 35px #d59444,
+               0 0 40px #d59444,
+               0 0 50px #d59444;
+  }
+}
 .banner {
-  font-family: "Courier New", Courier, monospace;
-  color: rgb(255, 255, 255);
   h1 {
     display: inline-block;
-    font-weight: 600px;
-    font-size: 3rem;
-    color: #fff;
-    margin-left: 50px;
-    text-shadow: 1px 1px #180000, -1px -1px #180000, 2px 2px #180000,
-      -2px -2px #180000;
+    text-align:center;
+    font-size:7em;
+    a{
+      text-decoration:none;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s;
+      color:#d59444;
+      font-family:Pacifico;
+      margin-left: 50px;
+      font-size:8rem;
+    }
+    a:hover{
+      -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+      animation: neon1 1.5s ease-in-out infinite alternate;
+    }
   }
   h2 {
+    font-family:Pacifico;
     display: inline-block;
     opacity: 1;
-    margin: 2em 0;
+    margin: 1em 0;
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-style: italic;
     margin-left: 50px;
     text-shadow: 1px 1px #180000, 3px 3px #180000, 2px 2px #180000;
   }
-  a {
-    display: inline-block;
-    padding: 0.6em 3.5em;
-    margin: auto;
-    text-decoration: none;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 40px;
-    margin-left: 50px;
-    text-shadow: 1px 1px #180000, -1px -1px #180000, 2px 2px #180000,
-      -2px -2px #180000;
-  }
+}
+.bannerabutton {
+  display: inline-block;
+  padding: 0.6em 3.5em;
+  margin: auto;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  margin-left: 50px;
+  text-shadow: 1px 1px #180000, -1px -1px #180000, 2px 2px #180000,
+    -2px -2px #180000;
 }
 .banner__ban {
   width: 100%;
@@ -40,11 +77,11 @@
   align-items: center;
   text-align: left;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.27),
-      rgba(0, 0, 0, 0.27)
+      rgba(0, 0, 0, 0.47),
+      rgba(0, 0, 0, 0.47)
     ), url(../img/icecube.jpg);
   background-repeat: no-repeat;
 }
