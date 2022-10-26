@@ -52,7 +52,7 @@ body {
   font-family: 'Pacifico';
   font-style: normal;
   font-weight: 400;
-  src: url("font1.woff") format("woff"); }
+  src: url("./font/font2.woff") format("woff"); }
 
 @-webkit-keyframes neon1 {
   from {
@@ -495,7 +495,7 @@ body {
   font-family: 'Audiowide';
   font-style: normal;
   font-weight: 400;
-  src: url("../font/font2.woff") format("woff"); }
+  src: url("./font/font2.woff") format("woff"); }
 
 .ubi h1 {
   margin: 20px 0 20px 0;
