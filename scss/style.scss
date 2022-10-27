@@ -49,15 +49,14 @@
 		display: none;
 	}
 	.Main__Header__Nav {
-		position: relative;
 		height: 100px;
-		top: -60px;
 		transition: none;
 		text-align: right;
 		margin-right: 50px;
+		margin-top: -45px;
 		li {
 			display: inline-block;
-			margin: 0 10px;
+			margin: 0 4px;
 			transition: none;
 			a {
 				color: $maincolor;
@@ -129,6 +128,9 @@
 	}
 	.footer__copy{
 		text-align: center;
+	}
+	.logoNav p a{
+		font-size: 2.3rem;
 	}
 
 	.Main__Header {

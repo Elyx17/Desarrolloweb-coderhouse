@@ -23,11 +23,9 @@
 <body>
     <header class="Main__Header">
         <nav>
-            <div>
-                <a href="index.html">
-                  <img class= "Main__Cont__Logo" src="icon/icon.png" alt= "Elyx Hall"/>
-                </a>
-            </div>
+          <div class="logoNav">
+            <p><a href="index.html">Elyx Hall</a></p>
+          </div>
             <input type="checkbox" id="check">
             <label for="check" class="bar__btn">
                 <i class="fa-solid fa-bars"></i>
@@ -46,17 +44,17 @@
     <div style="height: 65px;"></div>
     <div class="container">
 
-    <form class="well form-horizontal text-light" method="post"  id="contact_form mx-auto contactoformu">
-    <fieldset class="contactoformu">
+    <form class="well form-horizontal text-light contactoformu" method="post"  id="contact_form mx-auto">
+    <fieldset>
     
     <!-- Form Name -->
-    <div class="mt-3 contactodebus"><h1><a>Contáctanos!</a></h1></div>
+    <div class="mt-5 contactodebus"><h1><a>Contáctanos!</a></h1></div>
     
     <!-- Text input-->
     
     <div class="form-group">
       <label class="col-md-4 control-label">Nombre</label>  
-      <div class="col-md-4 inputGroupContainer">
+      <div class="col-md-12 inputGroupContainer">
       <div class="input-group">
       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
       <input  name="first_name" placeholder="Nombre" class="form-control"  type="text">
@@ -68,7 +66,7 @@
     
     <div class="form-group">
       <label class="col-md-4 control-label" >Apellido</label> 
-        <div class="col-md-4 inputGroupContainer">
+        <div class="col-md-12 inputGroupContainer">
         <div class="input-group">
       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
       <input name="last_name" placeholder="Apellido" class="form-control"  type="text">
@@ -79,7 +77,7 @@
     <!-- Text input-->
     <div class="form-group">
       <label class="col-md-4 control-label">E-Mail</label>  
-        <div class="col-md-4 inputGroupContainer">
+        <div class="col-md-12 inputGroupContainer">
         <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
       <input name="email" placeholder="E-Mail" class="form-control"  type="text">
@@ -91,7 +89,7 @@
     <!-- Text input-->
     <div class="form-group">
       <label class="col-md-4 control-label">Teléfono</label>  
-        <div class="col-md-4 inputGroupContainer">
+        <div class="col-md-12 inputGroupContainer">
         <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
       <input name="phone" placeholder="(011)5555-1212" class="form-control" type="text">
@@ -102,7 +100,7 @@
     <!-- Select Basic -->
     <div class="form-group"> 
       <label class="col-md-4 control-label">Provincia</label>
-        <div class="col-md-4 selectContainer">
+        <div class="col-md-12 selectContainer">
         <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
         <select name="state" class="form-control selectpicker" >
@@ -137,7 +135,7 @@
     <!-- Text input-->
     <div class="form-group">
       <label class="col-md-4 control-label">Localidad</label>  
-        <div class="col-md-4 inputGroupContainer">
+        <div class="col-md-12 inputGroupContainer">
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
             <input name="city" placeholder="Localidad" class="form-control"  type="text">
@@ -149,7 +147,7 @@
     
     <!-- radio checks -->
     <div class="form-group mt-2">
-        <div class="col-md-4">
+        <div class="col-md-12">
           <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
             <label class="form-check-label" for="flexSwitchCheckDefault">Acepto términos y condiciones.</label>
@@ -163,8 +161,8 @@
     
     <!-- Text area -->
     <div class="form-group">
-      <label class="col-md-4 control-label mt-3">Añadir comentario</label>
-        <div class="col-md-4 inputGroupContainer">
+      <label class="col-md-12 control-label mt-3">Añadir comentario</label>
+        <div class="col-md-12 inputGroupContainer">
         <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
                 <textarea class="form-control" name="comment" placeholder="Añadir comentario" rows="5"></textarea>
@@ -173,10 +171,10 @@
     </div>
       
     <!-- Button -->
-    <div class="form-group mb-4">
+
       <label class="col-md-4 control-label"></label>
       <div>
-        <button type="submit" class="btn btn-warning" >Enviar</button>
+        <button type="submit" class="btn btn-warning col-12 mx-auto mb-5" >Enviar</button>
       </div>
     </div>
     

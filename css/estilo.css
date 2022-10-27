@@ -31,7 +31,8 @@ footer {
     text-transform: capitalize;
     text-decoration: none; }
   .footer__box h3 {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-size: 1.47rem; }
 
 .footer__redes a {
   color: #d59344;
@@ -53,6 +54,31 @@ body {
 .Main__Header__Nav li a i {
   font-size: 1.6rem; }
 
+.logoNav p {
+  display: inline-block;
+  text-align: center;
+  font-size: 3rem; }
+  .logoNav p a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #d59444;
+    font-family: Pacifico;
+    margin-left: 20px;
+    font-size: 2.5rem;
+    z-index: 3; }
+  .logoNav p a:hover {
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate; }
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 3px #d59444, 0 0 5px #d59444; }
+  to {
+    text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 1px #d59444, 0 0 5px #d59444; } }
+
 @font-face {
   font-family: 'Pacifico';
   font-style: normal;
@@ -68,7 +94,7 @@ body {
 .banner h1 {
   display: inline-block;
   text-align: center;
-  font-size: 7em; }
+  font-size: 7rem; }
   .banner h1 a {
     text-decoration: none;
     -webkit-transition: all 0.5s;
@@ -494,7 +520,8 @@ body {
   border-radius: 10px;
   resize: none;
   width: 332px;
-  height: 90px; }
+  height: 90px;
+  padding: 5px; }
 
 @font-face {
   font-family: 'Audiowide';
@@ -531,6 +558,11 @@ body {
   font-style: normal;
   font-weight: 400;
   src: url(".././font/font2.woff") format("woff"); }
+
+.contactoformu {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .contactodebus h1 {
   margin: 20px 0 20px 0;
@@ -579,15 +611,14 @@ body {
   #check {
     display: none; }
   .Main__Header__Nav {
-    position: relative;
     height: 100px;
-    top: -60px;
     transition: none;
     text-align: right;
-    margin-right: 50px; }
+    margin-right: 50px;
+    margin-top: -45px; }
     .Main__Header__Nav li {
       display: inline-block;
-      margin: 0 10px;
+      margin: 0 4px;
       transition: none; }
       .Main__Header__Nav li a {
         color: #d59344;
@@ -649,6 +680,8 @@ body {
     text-align: center; }
   .footer__copy {
     text-align: center; }
+  .logoNav p a {
+    font-size: 2.3rem; }
   .Main__Header {
     width: 100%;
     background: #180000;
