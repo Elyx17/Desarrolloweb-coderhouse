@@ -39,6 +39,8 @@ footer {
   text-transform: capitalize;
   text-decoration: none;
   padding: 0 5px; }
+  .footer__redes a i b {
+    padding: 0 5px; }
 
 .footer__copy {
   display: flex;
