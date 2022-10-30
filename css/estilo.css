@@ -19,6 +19,7 @@ footer {
 
 .footer {
   display: flex;
+  justify-content: center;
   flex-wrap: nowrap;
   margin: 0px 30px 5px;
   font-size: 1rem; }
@@ -35,6 +36,7 @@ footer {
     font-size: 1.47rem; }
 
 .footer__redes a {
+  text-decoration: none;
   color: #d59344;
   text-transform: capitalize;
   text-decoration: none;
@@ -46,6 +48,9 @@ footer {
   display: flex;
   justify-content: center;
   padding: 20px 0 15px 0; }
+
+.footerRedesA {
+  text-decoration: none; }
 
 @font-face {
   font-family: 'Pacifico';
@@ -93,31 +98,7 @@ body {
   font-weight: 400;
   src: url("../font/font1.woff") format("woff"); }
 
-@-webkit-keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px  #fff, 0 0 30px  #fff, 0 0 40px  #d59444, 0 0 70px  #d59444, 0 0 80px  #d59444, 0 0 100px #d59444, 0 0 150px #d59444; }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #d59444, 0 0 35px #d59444, 0 0 40px #d59444, 0 0 50px #d59444; } }
-
-.banner h1 {
-  display: inline-block;
-  text-align: center;
-  font-size: 7rem; }
-  .banner h1 a {
-    text-decoration: none;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-    color: #d59444;
-    font-family: Pacifico;
-    margin-left: 50px;
-    font-size: 8rem; }
-  .banner h1 a:hover {
-    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-    animation: neon1 1.5s ease-in-out infinite alternate; }
-
-.banner h2 {
+.banner__descrip h2 {
   font-family: Pacifico;
   display: inline-block;
   opacity: 1;
@@ -150,51 +131,6 @@ body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)), url(../img/icecube.jpg);
   background-repeat: no-repeat; }
 
-.carrusel {
-  width: 100%; }
-
-.carrusel__cont {
-  width: 100%;
-  height: 600px;
-  overflow: hidden; }
-
-.carrusel__item {
-  position: relative;
-  width: 100%;
-  height: 100%; }
-
-.carrusel__item__tarjeta {
-  width: 100%;
-  height: 100%; }
-
-.carrusel__item__flechas {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px; }
-  .carrusel__item__flechas a {
-    text-decoration: none;
-    color: #fff; }
-
-#carrusel__item-1 {
-  background-image: url(../img/barra.png);
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-#carrusel__item-2 {
-  background-image: url(../img/drink-gf9de6b7df_1920.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-#carrusel__item-3 {
-  background-image: url(../img/drinks-wallpaper-1920x1080.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; }
-
 .banner__descrip {
   -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
@@ -223,7 +159,8 @@ body {
 
 .banner__descrip a:hover {
   -webkit-animation: blink-2 0.9s both;
-  animation: blink-2 0.9s both; }
+  animation: blink-2 0.9s both;
+  color: #fff; }
 
 @-webkit-keyframes blink-2 {
   0% {
@@ -240,6 +177,33 @@ body {
     opacity: 0.2; }
   100% {
     opacity: 1; } }
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px  #fff, 0 0 30px  #fff, 0 0 40px  #d59444, 0 0 70px  #d59444, 0 0 80px  #d59444, 0 0 100px #d59444, 0 0 150px #d59444; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #d59444, 0 0 35px #d59444, 0 0 40px #d59444, 0 0 50px #d59444; } }
+
+.titleElyx {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 7rem; }
+  .titleElyx a:hover {
+    color: #d59444;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate; }
+
+.titleElyxhref {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #d59444;
+  font-family: Pacifico;
+  margin-left: 50px;
+  font-size: 8rem; }
 
 .nosotros {
   color: #f0e8e8; }
@@ -287,7 +251,8 @@ body {
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  background-color: white; }
+  background-color: white;
+  margin: 15px 0; }
 
 .sponsor__card img {
   height: 12em; }
@@ -632,6 +597,8 @@ body {
         color: #d59344;
         font-size: 1rem;
         text-decoration: none; }
+  .bootsNav {
+    margin-top: -60px; }
   .caja {
     width: 100%;
     height: 80px; }
@@ -682,6 +649,8 @@ body {
     height: 170px; } }
 
 @media only screen and (max-width: 768px) {
+  .carrusel__cont {
+    height: 450px; }
   .footer {
     flex-wrap: wrap; }
   .footer__box {
