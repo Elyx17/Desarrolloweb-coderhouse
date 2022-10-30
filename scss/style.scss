@@ -123,9 +123,6 @@
 	}
 }
 @media only screen and (max-width: 768px) {
-	.carrusel__cont{
-		height: 450px;
-	}
 	
 	.footer{
 		flex-wrap: wrap;
@@ -208,10 +205,8 @@
 	}
 	.banner__ban {
 		background-size: cover;
+		height: 100vh;
 	}
-.banner__descrip{
-	margin-top: -15rem;
-}
 	
 	.banner {
 		

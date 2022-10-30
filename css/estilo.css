@@ -649,8 +649,6 @@ body {
     height: 170px; } }
 
 @media only screen and (max-width: 768px) {
-  .carrusel__cont {
-    height: 450px; }
   .footer {
     flex-wrap: wrap; }
   .footer__box {
@@ -710,9 +708,8 @@ body {
       #check:checked ~ .Main__Header__Nav li {
         display: block; }
   .banner__ban {
-    background-size: cover; }
-  .banner__descrip {
-    margin-top: -15rem; }
+    background-size: cover;
+    height: 100vh; }
   .banner h2 {
     font-size: 1.5rem;
     margin: 10px 20px 15px;
